@@ -38,6 +38,21 @@
   ">+5</button>
 
   <button onclick="
+    cartQuantity -= 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Remove from cart</button>
+
+  <button onclick="
+    cartQuantity -= 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+  ">-2</button>
+
+  <button onclick="
+    cartQuantity -= 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+  ">-3</button>
+
+  <button onclick="
     cartQuantity = 0;
     console.log('Cart was reset.')
     console.log(`Cart quantity: ${cartQuantity}`);
