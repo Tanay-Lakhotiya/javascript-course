@@ -7,13 +7,17 @@
 </head>
 <body>
   <script>
-    function greet(name = 'there') {
-      console.log(`Hello ${name}!`);
+    function greet(name) {
+      if (!name) {
+        console.log('Hi there!'); 
+      } else {
+        console.log(`Hello ${name}!`);
+      }
     }
 
     greet();
     greet('Tanay');
-    greet('Tanay');
+    greet('Simon');
   </script>
 </body>
 </html>
