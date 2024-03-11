@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>7h</title>
+  <title>Cart Quantity</title>
 </head>
 <body>
-  <p>Cart Quantity</p>
-
   <button onclick="
     console.log(`Cart quantity: ${cartQuantity}`);
   ">Show Quantity</button>
@@ -17,19 +15,19 @@
   ">Add to Cart</button>
 
   <button onclick="
-    updateCartQuantity(2);
+    updateCartQuantity(2)
   ">+2</button>
 
   <button onclick="
-    updateCartQuantity(3);
+    updateCartQuantity(3)
   ">+3</button>
 
   <button onclick="
-    updateCartQuantity(4);
+    updateCartQuantity(4)
   ">+4</button>
 
   <button onclick="
-    updateCartQuantity(5);
+    updateCartQuantity(5)
   ">+5</button>
 
   <button onclick="
@@ -46,8 +44,8 @@
 
   <button onclick="
     cartQuantity = 0;
+    console.log('Cart was reset.');
     console.log(`Cart quantity: ${cartQuantity}`);
-    console.log('Cart was reset.')
   ">Reset Cart</button>
 
   <script>
@@ -57,13 +55,13 @@
       if (cartQuantity + change > 10) {
         alert('The cart is full');
         return;
-      }
-      if (cartQuantity + change < 0) {
+      } else if (cartQuantity + change < 0) {
         alert('Not enough items in the cart');
         return;
-      } 
-      cartQuantity += change;
-      console.log(`Cart quantity: ${cartQuantity}`);
+      } else {
+        cartQuantity += change;
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }   
     }
   </script>
 </body>
