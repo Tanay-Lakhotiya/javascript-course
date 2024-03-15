@@ -4,20 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>10f</title>
-  <style>
-    .toggle-button {
-      background-color: rgb(230, 230, 230);
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-size: 15px;
-    }
-
-    .is-toggled {
-      background-color: black;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="10f.css">
 </head>
 <body>
   <button class="toggle-button gaming-button" onclick="
@@ -32,15 +19,6 @@
     toggleButton('.tech-button');
   ">Tech</button>
 
-  <script>
-    function toggleButton(selector) {
-      const button = document.querySelector(selector);
-      if (!button.classList.contains('is-toggled')) {
-          button.classList.add('is-toggled');
-      } else {
-          button.classList.remove('is-toggled');
-      }
-    }
-  </script>
+  <script src="10f.js"></script>
 </body>
 </html>
