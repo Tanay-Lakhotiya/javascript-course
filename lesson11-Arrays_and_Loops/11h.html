@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11g</title>
+</head>
+<body>
+  <script>
+    console.log(addOne([1, 2, 3]));
+
+    function addOne(array) {
+      console.log('inside function');
+      const newArray = [];
+
+      for (let i = 0; i < array.length; i++) {
+        const temp = array[i];
+        newArray.push(temp + 1);
+      }
+
+      return newArray;
+    }
+  </script>
+</body>
+</html>
