@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11p</title>
+</head>
+<body>
+  <script>
+    function findIndex(array) {
+      let index;
+      for (let i = 0; i < array.length; i++) {
+        if ('search' === array[i]) {
+          index = i;
+          break;
+        }
+      }
+      
+      if (index) {
+        console.log(index);
+      } else {
+        console.log(-1);
+      }
+    }
+
+    findIndex(['hello', 'world', 'search', 'good', 'search']);
+  </script>
+</body>
+</html>
